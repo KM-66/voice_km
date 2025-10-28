@@ -1,0 +1,5 @@
+  File "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service/voice_service_node.py", line 78
+    text = self.recognizer.recognize_whisper(audio_data, model="small"language=self.lang)# Whisper に集音データを送り、音声認識の結果を受取ます
+                                                               ^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

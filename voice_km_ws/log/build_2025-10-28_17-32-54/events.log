@@ -1,0 +1,458 @@
+[0.000000] (-) TimerEvent: {}
+[0.002480] (voice_interfaces) JobQueued: {'identifier': 'voice_interfaces', 'dependencies': OrderedDict()}
+[0.002650] (voice_service) JobQueued: {'identifier': 'voice_service', 'dependencies': OrderedDict([('voice_interfaces', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces')])}
+[0.002775] (voice_interfaces) JobStarted: {'identifier': 'voice_interfaces'}
+[0.066637] (voice_interfaces) JobProgress: {'identifier': 'voice_interfaces', 'progress': 'cmake'}
+[0.069102] (voice_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces'], 'cwd': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('LANGUAGE', 'ja:en_US:en'), ('USER', 'mimi'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mimi'), ('OLDPWD', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('SYSTEMD_EXEC_PID', '2539'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('COLCON_PREFIX_PATH', '/home/mimi/edu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mimi'), ('http_proxy', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mimi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mimi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/home:@/tmp/.ICE-unix/2511,unix/home:/tmp/.ICE-unix/2511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6647b0dd_d13e_453a_99b5_001364d56a15'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UOHOF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099338] (-) TimerEvent: {}
+[0.200193] (-) TimerEvent: {}
+[0.301101] (-) TimerEvent: {}
+[0.402087] (-) TimerEvent: {}
+[0.503156] (-) TimerEvent: {}
+[0.604186] (-) TimerEvent: {}
+[0.678712] (voice_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.704440] (-) TimerEvent: {}
+[0.805234] (-) TimerEvent: {}
+[0.910045] (-) TimerEvent: {}
+[1.011818] (-) TimerEvent: {}
+[1.112802] (-) TimerEvent: {}
+[1.195234] (voice_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.213078] (-) TimerEvent: {}
+[1.250071] (voice_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.313399] (-) TimerEvent: {}
+[1.414253] (-) TimerEvent: {}
+[1.515149] (-) TimerEvent: {}
+[1.521137] (voice_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.539455] (voice_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.578937] (voice_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.584129] (voice_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.598271] (voice_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.615446] (-) TimerEvent: {}
+[1.716464] (-) TimerEvent: {}
+[1.817363] (-) TimerEvent: {}
+[1.918299] (-) TimerEvent: {}
+[1.940425] (voice_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.960692] (voice_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.961227] (voice_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.962503] (voice_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.018507] (-) TimerEvent: {}
+[2.069841] (voice_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.119358] (-) TimerEvent: {}
+[2.220713] (-) TimerEvent: {}
+[2.321720] (-) TimerEvent: {}
+[2.422794] (-) TimerEvent: {}
+[2.523966] (-) TimerEvent: {}
+[2.626318] (-) TimerEvent: {}
+[2.670767] (voice_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.726977] (-) TimerEvent: {}
+[2.828268] (-) TimerEvent: {}
+[2.929147] (-) TimerEvent: {}
+[3.030136] (-) TimerEvent: {}
+[3.093371] (voice_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.118207] (voice_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.130375] (-) TimerEvent: {}
+[3.159670] (voice_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.230717] (-) TimerEvent: {}
+[3.331804] (-) TimerEvent: {}
+[3.422571] (voice_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.432483] (-) TimerEvent: {}
+[3.533373] (-) TimerEvent: {}
+[3.634310] (-) TimerEvent: {}
+[3.735372] (-) TimerEvent: {}
+[3.836034] (-) TimerEvent: {}
+[3.937026] (-) TimerEvent: {}
+[4.038007] (-) TimerEvent: {}
+[4.138812] (-) TimerEvent: {}
+[4.239647] (-) TimerEvent: {}
+[4.340446] (-) TimerEvent: {}
+[4.441367] (-) TimerEvent: {}
+[4.546305] (-) TimerEvent: {}
+[4.647594] (-) TimerEvent: {}
+[4.748582] (-) TimerEvent: {}
+[4.793329] (voice_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.852591] (-) TimerEvent: {}
+[4.957062] (-) TimerEvent: {}
+[5.060502] (-) TimerEvent: {}
+[5.162196] (-) TimerEvent: {}
+[5.263644] (-) TimerEvent: {}
+[5.365070] (-) TimerEvent: {}
+[5.468466] (-) TimerEvent: {}
+[5.484718] (voice_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.568796] (-) TimerEvent: {}
+[5.672097] (-) TimerEvent: {}
+[5.773076] (-) TimerEvent: {}
+[5.874109] (-) TimerEvent: {}
+[5.975069] (-) TimerEvent: {}
+[6.076408] (-) TimerEvent: {}
+[6.177594] (-) TimerEvent: {}
+[6.279549] (-) TimerEvent: {}
+[6.381204] (-) TimerEvent: {}
+[6.411945] (voice_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.483236] (-) TimerEvent: {}
+[6.544502] (voice_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.553329] (voice_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.586491] (-) TimerEvent: {}
+[6.675747] (voice_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[6.677743] (voice_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.678144] (voice_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.678426] (voice_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[6.687110] (-) TimerEvent: {}
+[6.748009] (voice_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.787389] (-) TimerEvent: {}
+[6.888344] (-) TimerEvent: {}
+[6.902802] (voice_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.988670] (-) TimerEvent: {}
+[7.040430] (voice_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.049469] (voice_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.063167] (voice_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.089053] (-) TimerEvent: {}
+[7.173603] (voice_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[7.189185] (-) TimerEvent: {}
+[7.206993] (voice_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces\n'}
+[7.230801] (voice_interfaces) CommandEnded: {'returncode': 0}
+[7.233005] (voice_interfaces) JobProgress: {'identifier': 'voice_interfaces', 'progress': 'build'}
+[7.237230] (voice_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('LANGUAGE', 'ja:en_US:en'), ('USER', 'mimi'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mimi'), ('OLDPWD', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('SYSTEMD_EXEC_PID', '2539'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('COLCON_PREFIX_PATH', '/home/mimi/edu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mimi'), ('http_proxy', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mimi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mimi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/home:@/tmp/.ICE-unix/2511,unix/home:/tmp/.ICE-unix/2511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6647b0dd_d13e_453a_99b5_001364d56a15'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UOHOF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.289462] (-) TimerEvent: {}
+[7.390497] (-) TimerEvent: {}
+[7.393588] (voice_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.477046] (voice_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.477555] (voice_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_voice_interfaces\n'}
+[7.490704] (-) TimerEvent: {}
+[7.591571] (-) TimerEvent: {}
+[7.692507] (-) TimerEvent: {}
+[7.793415] (-) TimerEvent: {}
+[7.894463] (-) TimerEvent: {}
+[7.995538] (-) TimerEvent: {}
+[8.096688] (-) TimerEvent: {}
+[8.197582] (-) TimerEvent: {}
+[8.299142] (-) TimerEvent: {}
+[8.333763] (voice_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[8.336367] (voice_interfaces) StdoutLine: {'line': b'creating voice_interfaces.egg-info\n'}
+[8.338832] (voice_interfaces) StdoutLine: {'line': b'writing voice_interfaces.egg-info/PKG-INFO\n'}
+[8.339057] (voice_interfaces) StdoutLine: {'line': b'writing dependency_links to voice_interfaces.egg-info/dependency_links.txt\n'}
+[8.339685] (voice_interfaces) StdoutLine: {'line': b'writing top-level names to voice_interfaces.egg-info/top_level.txt\n'}
+[8.340524] (voice_interfaces) StdoutLine: {'line': b"writing manifest file 'voice_interfaces.egg-info/SOURCES.txt'\n"}
+[8.354042] (voice_interfaces) StdoutLine: {'line': b"reading manifest file 'voice_interfaces.egg-info/SOURCES.txt'\n"}
+[8.355561] (voice_interfaces) StdoutLine: {'line': b"writing manifest file 'voice_interfaces.egg-info/SOURCES.txt'\n"}
+[8.399413] (-) TimerEvent: {}
+[8.479626] (voice_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_voice_interfaces_egg\n'}
+[8.499667] (-) TimerEvent: {}
+[8.600580] (-) TimerEvent: {}
+[8.670653] (voice_interfaces) StdoutLine: {'line': b'[  6%] Built target voice_interfaces__cpp\n'}
+[8.701201] (-) TimerEvent: {}
+[8.714656] (voice_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.715327] (voice_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.716127] (voice_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.745433] (voice_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o\x1b[0m\n'}
+[8.802201] (-) TimerEvent: {}
+[8.904087] (-) TimerEvent: {}
+[9.005323] (-) TimerEvent: {}
+[9.108342] (-) TimerEvent: {}
+[9.209089] (-) TimerEvent: {}
+[9.309790] (-) TimerEvent: {}
+[9.410664] (-) TimerEvent: {}
+[9.455597] (voice_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libvoice_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[9.511086] (-) TimerEvent: {}
+[9.577939] (voice_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o\x1b[0m\n'}
+[9.611357] (-) TimerEvent: {}
+[9.626182] (voice_interfaces) StdoutLine: {'line': b'[ 25%] Built target voice_interfaces__rosidl_generator_c\n'}
+[9.677722] (voice_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.679588] (voice_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.683900] (voice_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.712284] (-) TimerEvent: {}
+[9.813517] (-) TimerEvent: {}
+[9.826522] (voice_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/voice_interfaces/action/detail/voice_command__type_support.cpp.o\x1b[0m\n'}
+[9.833354] (voice_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/voice_interfaces/action/detail/dds_fastrtps/voice_command__type_support.cpp.o\x1b[0m\n'}
+[9.913931] (-) TimerEvent: {}
+[10.015336] (-) TimerEvent: {}
+[10.116249] (-) TimerEvent: {}
+[10.221009] (-) TimerEvent: {}
+[10.321833] (-) TimerEvent: {}
+[10.423112] (-) TimerEvent: {}
+[10.524081] (-) TimerEvent: {}
+[10.626073] (-) TimerEvent: {}
+[10.672680] (voice_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp.o\x1b[0m\n'}
+[10.727108] (-) TimerEvent: {}
+[10.768319] (voice_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/voice_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/voice_interfaces/action/detail/voice_command__type_support.c.o\x1b[0m\n'}
+[10.827369] (-) TimerEvent: {}
+[10.928333] (-) TimerEvent: {}
+[10.939417] (voice_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libvoice_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.016889] (voice_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libvoice_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.030033] (-) TimerEvent: {}
+[11.036032] (voice_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/voice_interfaces/action/detail/voice_command__type_support_c.cpp.o\x1b[0m\n'}
+[11.130338] (voice_interfaces) StdoutLine: {'line': b'[ 58%] Built target voice_interfaces__rosidl_typesupport_c\n'}
+[11.130943] (-) TimerEvent: {}
+[11.176839] (voice_interfaces) StdoutLine: {'line': b'[ 58%] Built target voice_interfaces__rosidl_typesupport_introspection_c\n'}
+[11.231307] (-) TimerEvent: {}
+[11.332460] (-) TimerEvent: {}
+[11.434420] (-) TimerEvent: {}
+[11.535563] (-) TimerEvent: {}
+[11.638369] (-) TimerEvent: {}
+[11.741604] (-) TimerEvent: {}
+[11.842676] (-) TimerEvent: {}
+[11.943827] (-) TimerEvent: {}
+[12.045211] (-) TimerEvent: {}
+[12.146230] (-) TimerEvent: {}
+[12.247316] (-) TimerEvent: {}
+[12.348465] (-) TimerEvent: {}
+[12.450116] (-) TimerEvent: {}
+[12.551061] (-) TimerEvent: {}
+[12.652158] (-) TimerEvent: {}
+[12.753080] (-) TimerEvent: {}
+[12.853945] (-) TimerEvent: {}
+[12.930640] (voice_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libvoice_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.954088] (-) TimerEvent: {}
+[12.997567] (voice_interfaces) StdoutLine: {'line': b'[ 61%] Built target voice_interfaces__rosidl_typesupport_cpp\n'}
+[13.017261] (voice_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libvoice_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.054308] (-) TimerEvent: {}
+[13.083357] (voice_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libvoice_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.090626] (voice_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libvoice_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.114931] (voice_interfaces) StdoutLine: {'line': b'[ 70%] Built target voice_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[13.154598] (-) TimerEvent: {}
+[13.167356] (voice_interfaces) StdoutLine: {'line': b'[ 70%] Built target voice_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[13.167726] (voice_interfaces) StdoutLine: {'line': b'[ 70%] Built target voice_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[13.191723] (voice_interfaces) StdoutLine: {'line': b'[ 70%] Built target voice_interfaces\n'}
+[13.218764] (voice_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.254916] (-) TimerEvent: {}
+[13.355554] (-) TimerEvent: {}
+[13.456213] (-) TimerEvent: {}
+[13.556827] (-) TimerEvent: {}
+[13.657451] (-) TimerEvent: {}
+[13.758080] (-) TimerEvent: {}
+[13.858728] (-) TimerEvent: {}
+[13.959584] (-) TimerEvent: {}
+[14.060391] (-) TimerEvent: {}
+[14.098991] (voice_interfaces) StdoutLine: {'line': b'[ 74%] Built target voice_interfaces__py\n'}
+[14.131500] (voice_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/voice_interfaces__rosidl_generator_py.dir/rosidl_generator_py/voice_interfaces/action/_voice_command_s.c.o\x1b[0m\n'}
+[14.160651] (-) TimerEvent: {}
+[14.261292] (-) TimerEvent: {}
+[14.362078] (-) TimerEvent: {}
+[14.462917] (-) TimerEvent: {}
+[14.563584] (-) TimerEvent: {}
+[14.615466] (voice_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voice_interfaces/libvoice_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[14.663813] (-) TimerEvent: {}
+[14.746089] (voice_interfaces) StdoutLine: {'line': b'[ 80%] Built target voice_interfaces__rosidl_generator_py\n'}
+[14.764340] (-) TimerEvent: {}
+[14.782199] (voice_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/voice_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.782612] (voice_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/voice_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.788960] (voice_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/voice_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.864609] (-) TimerEvent: {}
+[14.932165] (voice_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voice_interfaces/voice_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.932545] (voice_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voice_interfaces/voice_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.937789] (voice_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/voice_interfaces/voice_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.964769] (-) TimerEvent: {}
+[15.025321] (voice_interfaces) StdoutLine: {'line': b'[100%] Built target voice_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[15.025558] (voice_interfaces) StdoutLine: {'line': b'[100%] Built target voice_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.025644] (voice_interfaces) StdoutLine: {'line': b'[100%] Built target voice_interfaces__rosidl_typesupport_c__pyext\n'}
+[15.041440] (voice_interfaces) CommandEnded: {'returncode': 0}
+[15.042490] (voice_interfaces) JobProgress: {'identifier': 'voice_interfaces', 'progress': 'install'}
+[15.054949] (voice_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces'], 'cwd': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('LANGUAGE', 'ja:en_US:en'), ('USER', 'mimi'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mimi'), ('OLDPWD', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('SYSTEMD_EXEC_PID', '2539'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('COLCON_PREFIX_PATH', '/home/mimi/edu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mimi'), ('http_proxy', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mimi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mimi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/home:@/tmp/.ICE-unix/2511,unix/home:/tmp/.ICE-unix/2511'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6647b0dd_d13e_453a_99b5_001364d56a15'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UOHOF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://wwwproxy.kanazawa-it.ac.jp:8080/'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.064902] (voice_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.065061] (-) TimerEvent: {}
+[15.065306] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/rosidl_interfaces/voice_interfaces\n'}
+[15.065580] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces\n'}
+[15.065664] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg\n'}
+[15.065755] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.066118] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action\n'}
+[15.066243] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail\n'}
+[15.066379] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.h\n'}
+[15.066593] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__struct.h\n'}
+[15.066751] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__functions.c\n'}
+[15.066819] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__functions.h\n'}
+[15.067005] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/voice_command.h\n'}
+[15.067144] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/library_path.sh\n'}
+[15.067409] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/library_path.dsv\n'}
+[15.067604] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_c.so\n'}
+[15.068052] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_c.so" to ""\n'}
+[15.068471] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces\n'}
+[15.068585] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg\n'}
+[15.068748] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.069006] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action\n'}
+[15.069202] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail\n'}
+[15.069279] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_fastrtps_c.h\n'}
+[15.069468] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[15.069813] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.070030] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces\n'}
+[15.070235] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg\n'}
+[15.070416] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.070599] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action\n'}
+[15.070781] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail\n'}
+[15.071001] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_introspection_c.h\n'}
+[15.071269] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.c\n'}
+[15.071512] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[15.071592] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.071654] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_c.so\n'}
+[15.071713] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[15.071770] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces\n'}
+[15.071826] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg\n'}
+[15.072643] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.072819] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action\n'}
+[15.073058] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail\n'}
+[15.073214] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__struct.hpp\n'}
+[15.073327] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.hpp\n'}
+[15.073594] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__traits.hpp\n'}
+[15.073769] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__builder.hpp\n'}
+[15.073986] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/voice_command.hpp\n'}
+[15.074329] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces\n'}
+[15.074434] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg\n'}
+[15.074511] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.074582] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action\n'}
+[15.074651] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail\n'}
+[15.074720] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.074789] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/dds_fastrtps\n'}
+[15.074896] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.075215] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.075380] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces\n'}
+[15.075552] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action\n'}
+[15.075723] (voice_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail\n'}
+[15.075929] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.076122] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.cpp\n'}
+[15.076437] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[15.076516] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.076579] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_cpp.so\n'}
+[15.076745] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[15.076866] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/pythonpath.sh\n'}
+[15.077119] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/pythonpath.dsv\n'}
+[15.077202] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info\n'}
+[15.077437] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.077643] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.077719] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.077927] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.078127] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces\n'}
+[15.078198] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.078344] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.078473] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[15.078539] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.078808] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.078922] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.079049] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/libvoice_interfaces__rosidl_generator_py.so\n'}
+[15.079220] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action\n'}
+[15.079391] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/_voice_command.py\n'}
+[15.079571] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/__init__.py\n'}
+[15.079767] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/_voice_command_s.c\n'}
+[15.079992] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/__init__.py\n'}
+[15.132985] (voice_interfaces) StdoutLine: {'line': b"Listing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces'...\n"}
+[15.133263] (voice_interfaces) StdoutLine: {'line': b"Compiling '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/__init__.py'...\n"}
+[15.133340] (voice_interfaces) StdoutLine: {'line': b"Listing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action'...\n"}
+[15.133402] (voice_interfaces) StdoutLine: {'line': b"Compiling '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/__init__.py'...\n"}
+[15.133463] (voice_interfaces) StdoutLine: {'line': b"Compiling '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/_voice_command.py'...\n"}
+[15.138969] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.139377] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.139674] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.140216] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.140540] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.141024] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.141184] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_py.so\n'}
+[15.141683] (voice_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_py.so" to ""\n'}
+[15.141839] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/action/VoiceCommand.idl\n'}
+[15.142072] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/action/VoiceCommand.action\n'}
+[15.142264] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/package_run_dependencies/voice_interfaces\n'}
+[15.142436] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/parent_prefix_path/voice_interfaces\n'}
+[15.142604] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/ament_prefix_path.sh\n'}
+[15.142759] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/ament_prefix_path.dsv\n'}
+[15.142971] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/path.sh\n'}
+[15.143132] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/path.dsv\n'}
+[15.143388] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.bash\n'}
+[15.143465] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.sh\n'}
+[15.143602] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.zsh\n'}
+[15.143861] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.dsv\n'}
+[15.143945] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/package.dsv\n'}
+[15.144062] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/packages/voice_interfaces\n'}
+[15.145251] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_cExport.cmake\n'}
+[15.145480] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.145708] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.145934] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.146163] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.146362] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.146580] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[15.147688] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.147917] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_cppExport.cmake\n'}
+[15.148097] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.148264] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.148398] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.149299] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.149520] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[15.149731] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.149946] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_pyExport.cmake\n'}
+[15.150169] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.150356] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[15.150540] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.150748] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.151433] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.151652] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.151896] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.152825] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.153163] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfacesConfig.cmake\n'}
+[15.153677] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfacesConfig-version.cmake\n'}
+[15.154024] (voice_interfaces) StdoutLine: {'line': b'-- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/package.xml\n'}
+[15.157025] (voice_interfaces) CommandEnded: {'returncode': 0}
+[15.165476] (-) TimerEvent: {}
+[15.185591] (voice_interfaces) JobEnded: {'identifier': 'voice_interfaces', 'rc': 0}
+[15.186749] (voice_service) JobStarted: {'identifier': 'voice_service'}
+[15.265815] (-) TimerEvent: {}
+[15.369052] (-) TimerEvent: {}
+[15.470026] (-) TimerEvent: {}
+[15.570811] (-) TimerEvent: {}
+[15.675245] (-) TimerEvent: {}
+[15.776118] (-) TimerEvent: {}
+[15.878261] (-) TimerEvent: {}
+[15.979229] (-) TimerEvent: {}
+[16.080062] (-) TimerEvent: {}
+[16.181029] (-) TimerEvent: {}
+[16.281791] (-) TimerEvent: {}
+[16.382735] (-) TimerEvent: {}
+[16.483924] (-) TimerEvent: {}
+[16.584994] (-) TimerEvent: {}
+[16.687324] (-) TimerEvent: {}
+[16.788485] (-) TimerEvent: {}
+[16.890156] (-) TimerEvent: {}
+[16.992283] (-) TimerEvent: {}
+[17.072488] (voice_service) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/voice_service', 'build', '--build-base', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build', 'install', '--record', '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_service', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://wwwproxy.kanazawa-it.ac.jp:8080/', 'LANGUAGE': 'ja:en_US:en', 'USER': 'mimi', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/mimi', 'OLDPWD': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'SYSTEMD_EXEC_PID': '2539', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://wwwproxy.kanazawa-it.ac.jp:8080/', 'COLCON_PREFIX_PATH': '/home/mimi/edu_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'mimi', 'http_proxy': 'http://wwwproxy.kanazawa-it.ac.jp:8080/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mimi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/mimi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/home:@/tmp/.ICE-unix/2511,unix/home:/tmp/.ICE-unix/2511', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6647b0dd_d13e_453a_99b5_001364d56a15', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UOHOF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages:/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://wwwproxy.kanazawa-it.ac.jp:8080/', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces'}, 'shell': False}
+[17.092469] (-) TimerEvent: {}
+[17.193252] (-) TimerEvent: {}
+[17.294173] (-) TimerEvent: {}
+[17.395027] (-) TimerEvent: {}
+[17.497346] (-) TimerEvent: {}
+[17.598241] (-) TimerEvent: {}
+[17.647766] (voice_service) StdoutLine: {'line': b'running egg_info\n'}
+[17.649263] (voice_service) StdoutLine: {'line': b'creating ../../build/voice_service/voice_service.egg-info\n'}
+[17.649983] (voice_service) StdoutLine: {'line': b'writing ../../build/voice_service/voice_service.egg-info/PKG-INFO\n'}
+[17.650470] (voice_service) StdoutLine: {'line': b'writing dependency_links to ../../build/voice_service/voice_service.egg-info/dependency_links.txt\n'}
+[17.650867] (voice_service) StdoutLine: {'line': b'writing entry points to ../../build/voice_service/voice_service.egg-info/entry_points.txt\n'}
+[17.651321] (voice_service) StdoutLine: {'line': b'writing requirements to ../../build/voice_service/voice_service.egg-info/requires.txt\n'}
+[17.651530] (voice_service) StdoutLine: {'line': b'writing top-level names to ../../build/voice_service/voice_service.egg-info/top_level.txt\n'}
+[17.651876] (voice_service) StdoutLine: {'line': b"writing manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'\n"}
+[17.655415] (voice_service) StdoutLine: {'line': b"reading manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'\n"}
+[17.657214] (voice_service) StdoutLine: {'line': b"writing manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'\n"}
+[17.658287] (voice_service) StdoutLine: {'line': b'running build\n'}
+[17.658530] (voice_service) StdoutLine: {'line': b'running build_py\n'}
+[17.659007] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build\n'}
+[17.659774] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib\n'}
+[17.660055] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service\n'}
+[17.660301] (voice_service) StdoutLine: {'line': b'copying voice_service/voice_client_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service\n'}
+[17.662947] (voice_service) StdoutLine: {'line': b'copying voice_service/voice_service_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service\n'}
+[17.664884] (voice_service) StdoutLine: {'line': b'copying voice_service/__init__.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service\n'}
+[17.665623] (voice_service) StdoutLine: {'line': b'running install\n'}
+[17.666558] (voice_service) StdoutLine: {'line': b'running install_lib\n'}
+[17.668511] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service\n'}
+[17.669164] (voice_service) StdoutLine: {'line': b'copying /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service/voice_client_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service\n'}
+[17.669464] (voice_service) StdoutLine: {'line': b'copying /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service/voice_service_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service\n'}
+[17.670044] (voice_service) StdoutLine: {'line': b'copying /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service/__init__.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service\n'}
+[17.671632] (voice_service) StdoutLine: {'line': b'byte-compiling /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service/voice_client_node.py to voice_client_node.cpython-310.pyc\n'}
+[17.674019] (voice_service) StdoutLine: {'line': b'byte-compiling /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service/voice_service_node.py to voice_service_node.cpython-310.pyc\n'}
+[17.676542] (voice_service) StdoutLine: {'line': b'byte-compiling /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service/__init__.py to __init__.cpython-310.pyc\n'}
+[17.677044] (voice_service) StdoutLine: {'line': b'running install_data\n'}
+[17.677300] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/share/ament_index\n'}
+[17.678255] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/share/ament_index/resource_index\n'}
+[17.678492] (voice_service) StdoutLine: {'line': b'creating /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/share/ament_index/resource_index/packages\n'}
+[17.678624] (voice_service) StdoutLine: {'line': b'copying resource/voice_service -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/share/ament_index/resource_index/packages\n'}
+[17.678945] (voice_service) StdoutLine: {'line': b'copying package.xml -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/share/voice_service\n'}
+[17.679473] (voice_service) StdoutLine: {'line': b'running install_egg_info\n'}
+[17.683688] (voice_service) StdoutLine: {'line': b'Copying ../../build/voice_service/voice_service.egg-info to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service-0.0.0-py3.10.egg-info\n'}
+[17.690438] (voice_service) StdoutLine: {'line': b'running install_scripts\n'}
+[17.698532] (-) TimerEvent: {}
+[17.748185] (voice_service) StdoutLine: {'line': b"writing list of installed files to '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/install.log'\n"}
+[17.799058] (-) TimerEvent: {}
+[17.805795] (voice_service) CommandEnded: {'returncode': 0}
+[17.827416] (voice_service) JobEnded: {'identifier': 'voice_service', 'rc': 0}
+[17.831061] (-) EventReactorShutdown: {}

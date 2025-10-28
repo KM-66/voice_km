@@ -1,0 +1,219 @@
+// generated from rosidl_generator_c/resource/idl__struct.h.em
+// with input from voice_interfaces:action/VoiceCommand.idl
+// generated code does not contain a copyright notice
+
+#ifndef VOICE_INTERFACES__ACTION__DETAIL__VOICE_COMMAND__STRUCT_H_
+#define VOICE_INTERFACES__ACTION__DETAIL__VOICE_COMMAND__STRUCT_H_
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'command'
+#include "rosidl_runtime_c/string.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_Goal
+{
+  rosidl_runtime_c__String command;
+} voice_interfaces__action__VoiceCommand_Goal;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_Goal.
+typedef struct voice_interfaces__action__VoiceCommand_Goal__Sequence
+{
+  voice_interfaces__action__VoiceCommand_Goal * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_Goal__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'answer'
+// already included above
+// #include "rosidl_runtime_c/string.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_Result
+{
+  rosidl_runtime_c__String answer;
+} voice_interfaces__action__VoiceCommand_Result;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_Result.
+typedef struct voice_interfaces__action__VoiceCommand_Result__Sequence
+{
+  voice_interfaces__action__VoiceCommand_Result * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_Result__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'process'
+// already included above
+// #include "rosidl_runtime_c/string.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_Feedback
+{
+  rosidl_runtime_c__String process;
+} voice_interfaces__action__VoiceCommand_Feedback;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_Feedback.
+typedef struct voice_interfaces__action__VoiceCommand_Feedback__Sequence
+{
+  voice_interfaces__action__VoiceCommand_Feedback * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_Feedback__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'goal_id'
+#include "unique_identifier_msgs/msg/detail/uuid__struct.h"
+// Member 'goal'
+#include "voice_interfaces/action/detail/voice_command__struct.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_SendGoal_Request
+{
+  unique_identifier_msgs__msg__UUID goal_id;
+  voice_interfaces__action__VoiceCommand_Goal goal;
+} voice_interfaces__action__VoiceCommand_SendGoal_Request;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_SendGoal_Request.
+typedef struct voice_interfaces__action__VoiceCommand_SendGoal_Request__Sequence
+{
+  voice_interfaces__action__VoiceCommand_SendGoal_Request * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_SendGoal_Request__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'stamp'
+#include "builtin_interfaces/msg/detail/time__struct.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_SendGoal_Response
+{
+  bool accepted;
+  builtin_interfaces__msg__Time stamp;
+} voice_interfaces__action__VoiceCommand_SendGoal_Response;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_SendGoal_Response.
+typedef struct voice_interfaces__action__VoiceCommand_SendGoal_Response__Sequence
+{
+  voice_interfaces__action__VoiceCommand_SendGoal_Response * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_SendGoal_Response__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'goal_id'
+// already included above
+// #include "unique_identifier_msgs/msg/detail/uuid__struct.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_GetResult_Request
+{
+  unique_identifier_msgs__msg__UUID goal_id;
+} voice_interfaces__action__VoiceCommand_GetResult_Request;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_GetResult_Request.
+typedef struct voice_interfaces__action__VoiceCommand_GetResult_Request__Sequence
+{
+  voice_interfaces__action__VoiceCommand_GetResult_Request * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_GetResult_Request__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'result'
+// already included above
+// #include "voice_interfaces/action/detail/voice_command__struct.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_GetResult_Response
+{
+  int8_t status;
+  voice_interfaces__action__VoiceCommand_Result result;
+} voice_interfaces__action__VoiceCommand_GetResult_Response;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_GetResult_Response.
+typedef struct voice_interfaces__action__VoiceCommand_GetResult_Response__Sequence
+{
+  voice_interfaces__action__VoiceCommand_GetResult_Response * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_GetResult_Response__Sequence;
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'goal_id'
+// already included above
+// #include "unique_identifier_msgs/msg/detail/uuid__struct.h"
+// Member 'feedback'
+// already included above
+// #include "voice_interfaces/action/detail/voice_command__struct.h"
+
+/// Struct defined in action/VoiceCommand in the package voice_interfaces.
+typedef struct voice_interfaces__action__VoiceCommand_FeedbackMessage
+{
+  unique_identifier_msgs__msg__UUID goal_id;
+  voice_interfaces__action__VoiceCommand_Feedback feedback;
+} voice_interfaces__action__VoiceCommand_FeedbackMessage;
+
+// Struct for a sequence of voice_interfaces__action__VoiceCommand_FeedbackMessage.
+typedef struct voice_interfaces__action__VoiceCommand_FeedbackMessage__Sequence
+{
+  voice_interfaces__action__VoiceCommand_FeedbackMessage * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} voice_interfaces__action__VoiceCommand_FeedbackMessage__Sequence;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // VOICE_INTERFACES__ACTION__DETAIL__VOICE_COMMAND__STRUCT_H_

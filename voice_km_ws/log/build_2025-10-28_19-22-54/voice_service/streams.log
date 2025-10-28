@@ -1,0 +1,22 @@
+[1.729s] Invoking command in '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_service': PYTHONPATH=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/voice_service build --build-base /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build install --record /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/install.log --single-version-externally-managed install_data
+[2.369s] running egg_info
+[2.371s] writing ../../build/voice_service/voice_service.egg-info/PKG-INFO
+[2.372s] writing dependency_links to ../../build/voice_service/voice_service.egg-info/dependency_links.txt
+[2.373s] writing entry points to ../../build/voice_service/voice_service.egg-info/entry_points.txt
+[2.374s] writing requirements to ../../build/voice_service/voice_service.egg-info/requires.txt
+[2.375s] writing top-level names to ../../build/voice_service/voice_service.egg-info/top_level.txt
+[2.380s] reading manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'
+[2.382s] writing manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'
+[2.383s] running build
+[2.383s] running build_py
+[2.384s] running install
+[2.385s] running install_lib
+[2.388s] running install_data
+[2.388s] running install_egg_info
+[2.393s] removing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service-0.0.0-py3.10.egg-info' (and everything under it)
+[2.394s] Copying ../../build/voice_service/voice_service.egg-info to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service-0.0.0-py3.10.egg-info
+[2.397s] running install_scripts
+[2.454s] Installing voice_client_node script to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/voice_service
+[2.455s] Installing voice_service_node script to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/voice_service
+[2.456s] writing list of installed files to '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/install.log'
+[2.529s] Invoked command in '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_service' returned '0': PYTHONPATH=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/voice_service build --build-base /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build install --record /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/install.log --single-version-externally-managed install_data

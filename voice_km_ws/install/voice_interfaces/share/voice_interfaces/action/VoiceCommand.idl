@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from voice_interfaces/action/VoiceCommand.action
+// generated code does not contain a copyright notice
+
+
+module voice_interfaces {
+  module action {
+    struct VoiceCommand_Goal {
+      string command;
+    };
+    struct VoiceCommand_Result {
+      string answer;
+    };
+    struct VoiceCommand_Feedback {
+      string process;
+    };
+  };
+};

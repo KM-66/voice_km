@@ -1,0 +1,4 @@
+[console_scripts]
+voice_client_node = voice_service.voice_client_node:main
+voice_service_node = voice_service.voice_service_node:main
+
