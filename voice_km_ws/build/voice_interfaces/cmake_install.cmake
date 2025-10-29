@@ -97,7 +97,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_c.so"
-         OLD_RPATH "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces:/opt/ros/humble/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_c.so")
@@ -356,11 +356,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/action" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_adapter/voice_interfaces/action/VoiceCommand.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/srv" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_adapter/voice_interfaces/srv/VoiceCommand.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/action" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces/action/VoiceCommand.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/srv" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces/srv/VoiceCommand.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/srv" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_cmake/srv/VoiceCommand_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/srv" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_cmake/srv/VoiceCommand_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -584,10 +592,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/cmake" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/cmake" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
@@ -601,6 +605,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/cmake" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/voice_interfaces/cmake" TYPE FILE FILES "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

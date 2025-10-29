@@ -1,17 +1,13 @@
-import threading
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionServer, CancelResponse
+from rclpy.executors import MultiThreadedExecutor 
 from rclpy.callback_groups import ReentrantCallbackGroup
-from rclpy.executors import MultiThreadedExecutor
-from voice_interfaces.action import VoiceCommand
+from voice_interfaces.srv import VoiceCommand
 from ctypes import CFUNCTYPE, c_char_p, c_int, c_char_p, c_int, c_char_p, cdll
 from speech_recognition import (Recognizer, Microphone, UnknownValueError, RequestError, WaitTimeoutError)
 
 
-
-
-# pyaudio の警告表示
+# pyaudio の警告表示　これにより、pyaudioが出すエラーを表示できないようにする　 もしデバックしたい場合はコメントアウト推奨
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
     pass
@@ -19,104 +15,62 @@ c_error_handler = ERROR_HANDLER_FUNC(py_error_handler)
 asound = cdll.LoadLibrary('libasound.so')
 asound.snd_lib_error_set_handler(c_error_handler)
 
-
 class VoiceRecoServer(Node):
     def __init__(self):
         super().__init__('voice_service_node')
         self.get_logger().info('音声認識サーバを起動します')
-        self.lang = 'ja'
-        # self.lang = 'en'
+        self.lang = 'ja' # 日本語に設定　あまりにもネイティブな場合は英語として認識されることも
         self.recognizer = Recognizer()
-        self.goal_handle = None
-        self.goal_lock = threading.Lock()
-        self.execute_lock = threading.Lock()
-        self.action_server = ActionServer(
-            self,
-            VoiceCommand,
-            'voice_reco',
-            self.execute_callback,
-            cancel_callback=self.cancel_callback,
-            handle_accepted_callback=self.handle_accepted_callback,
-            callback_group=ReentrantCallbackGroup()
-        )
+        self.callback_group = ReentrantCallbackGroup()
+        self.service = self.create_service(VoiceCommand, 'voice_reco', self.callback, callback_group=self.callback_group)
 
-    def handle_accepted_callback(self, goal_handle):
-        with self.goal_lock:
-            if self.goal_handle is not None and self.goal_handle.is_active:
-                self.get_logger().info('前の音声入力を中止')
-                self.goal_handle.abort()
-            self.goal_handl = goal_handle
-        goal_handle.execute()
-
-    def execute_callback(self, goal_handle):
-        with self.execute_lock:
-            self.get_logger().info('実行...')
-            result = VoiceCommand.Result()
-            result.answer = 'NG'
+    # requestは使用してない　使用した機能付け足したい場合は変更可
+    def callback(self,request, response):
+        self.get_logger().info('実行...')
+        response.answer = 'NG'
+        try:
             with Microphone() as source:
                 self.get_logger().info('音声入力')
+                # ノイズ測定　少しラグくなるためノイズないときはinitのほうに移動推奨
                 self.recognizer.adjust_for_ambient_noise(source)
                 try:
                     audio_data = self.recognizer.listen(
-                        source, timeout=10.0, phrase_time_limit=10.0)
+                        # タイムアウトまでの時間　適宜変更推奨
+                        source, timeout=10.0, phrase_time_limit=10.0) 
                 except WaitTimeoutError:
                     self.get_logger().info('タイムアウト')
-                    return result
+                    return response
                 
-            if not goal_handle.is_active:
-                self.get_logger().info('中止')
-                return result
-            
-            if goal_handle.is_cancel_requested:
-                goal_handle.canceled()
-                self.get_logger().info('キャンセル')
-                return result
-            
-            text = ''
-            try:
-                self.get_logger().info('音声認識')
-                text = self.recognizer.recognize_whisper(audio_data, model="base", language=self.lang)# Whisper に集音データを送り、音声認識の結果を受取ます
-                # text = self.recognize_google(audio_data, language=self.lang)
-            except RequestError:
-                self.get_logger().info('API無効')
-                return result
-            
-            except UnknownValueError:
-                self.get_logger().info('認識できない')
+                try:
+                    self.get_logger().info('音声認識')
+                    # Whisper の設定　重い場合はここのmodelを変更する
+                    text = self.recognizer.recognize_whisper(audio_data, model="tiny", language=self.lang) 
+                except RequestError:
+                    self.get_logger().info('API無効')
+                    return response
+                except UnknownValueError:
+                    self.get_logger().info('認識できない')
+                    return response
 
-            if not goal_handle.is_active:
-                self.get_logger().info('中止')
-                return result
-
-            if goal_handle.is_cancel_requested:
-                goal_handle.canceled()
-                self.get_logger().info('キャンセル')
-                return result
+                response.answer = text
+                self.get_logger().info(f'認識結果:{text}')
+                return response
+        except Exception as e:
+            # マイクへのアクセス失敗など、予期せぬエラー
+            self.get_logger().error(f"コールバック中に予期せぬエラー: {e}")
+            return response
             
-            goal_handle.succeed()
-            result.answer = text
-            self.get_logger().info(f'認識結果:{text}')
-            return result
-        
-    def cancel_callback(self, goal_handle):
-        self.get_logger().info('キャンセル受信')
-        return CancelResponse.ACCEPT
     
 
 def main():
     rclpy.init()
     node = VoiceRecoServer()
     executor = MultiThreadedExecutor()
+    executor.add_node(node)
     try:
-        rclpy.spin(node, executor=executor)
+        executor.spin()
     except KeyboardInterrupt:
-        pass
-
+        print('Ctrl+Cが押されました')
+    node.destroy_node()
     rclpy.try_shutdown()
-
-
-
-
-
-
-
+    print('プログラムが終了しました')

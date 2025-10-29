@@ -69,49 +69,39 @@ include CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/flags.make
 
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: rosidl_adapter/voice_interfaces/action/VoiceCommand.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em
+rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp: rosidl_adapter/voice_interfaces/srv/VoiceCommand.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
-CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/flags.make
-CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o: rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp
-CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o -MF CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o.d -o CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o -c /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp
+CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/flags.make
+CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o: rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp
+CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o -MF CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o.d -o CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o -c /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp
 
-CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp > CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.i
+CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp > CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.i
 
-CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp -o CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.s
+CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp -o CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.s
 
 # Object files for target voice_interfaces__rosidl_typesupport_cpp
 voice_interfaces__rosidl_typesupport_cpp_OBJECTS = \
-"CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o"
+"CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o"
 
 # External object files for target voice_interfaces__rosidl_typesupport_cpp
 voice_interfaces__rosidl_typesupport_cpp_EXTERNAL_OBJECTS =
 
-libvoice_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp.o
+libvoice_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp.o
 libvoice_interfaces__rosidl_typesupport_cpp.so: CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/build.make
-libvoice_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
-libvoice_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-libvoice_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 libvoice_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 libvoice_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 libvoice_interfaces__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
@@ -128,7 +118,7 @@ CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/clean
 
-CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/voice_interfaces/action/voice_command__type_support.cpp
+CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/voice_interfaces/srv/voice_command__type_support.cpp
 	cd /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/voice_interfaces__rosidl_typesupport_cpp.dir/depend
 

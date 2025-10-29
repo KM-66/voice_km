@@ -2,9 +2,9 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c"
   "../rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
-  "../rosidl_generator_py/voice_interfaces/action/__init__.py"
-  "../rosidl_generator_py/voice_interfaces/action/_voice_command.py"
-  "../rosidl_generator_py/voice_interfaces/action/_voice_command_s.c"
+  "../rosidl_generator_py/voice_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/voice_interfaces/srv/_voice_command.py"
+  "../rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c"
   "CMakeFiles/voice_interfaces__py"
 )
 

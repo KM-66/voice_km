@@ -1,0 +1,185 @@
+[0.054s] Invoking command in '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces -- -j8 -l8
+[0.287s] [ 12%] Built target voice_interfaces__cpp
+[0.287s] [ 12%] Built target voice_interfaces__rosidl_generator_c
+[0.356s] [ 12%] Built target ament_cmake_python_copy_voice_interfaces
+[0.462s] [ 22%] Built target voice_interfaces__rosidl_typesupport_c
+[0.488s] [ 32%] Built target voice_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.488s] [ 41%] Built target voice_interfaces__rosidl_typesupport_fastrtps_c
+[0.490s] [ 51%] Built target voice_interfaces__rosidl_typesupport_introspection_cpp
+[0.492s] [ 61%] Built target voice_interfaces__rosidl_typesupport_introspection_c
+[0.529s] [ 70%] Built target voice_interfaces__rosidl_typesupport_cpp
+[0.646s] [ 70%] Built target voice_interfaces
+[0.761s] [ 74%] Built target voice_interfaces__py
+[0.880s] [ 80%] Built target voice_interfaces__rosidl_generator_py
+[0.986s] [ 87%] Built target voice_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.993s] [ 93%] Built target voice_interfaces__rosidl_typesupport_c__pyext
+[0.994s] [100%] Built target voice_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.224s] running egg_info
+[1.226s] writing voice_interfaces.egg-info/PKG-INFO
+[1.228s] writing dependency_links to voice_interfaces.egg-info/dependency_links.txt
+[1.229s] writing top-level names to voice_interfaces.egg-info/top_level.txt
+[1.239s] reading manifest file 'voice_interfaces.egg-info/SOURCES.txt'
+[1.240s] writing manifest file 'voice_interfaces.egg-info/SOURCES.txt'
+[1.328s] [100%] Built target ament_cmake_python_build_voice_interfaces_egg
+[1.376s] Invoked command in '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces -- -j8 -l8
+[1.415s] Invoking command in '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces
+[1.448s] -- Install configuration: ""
+[1.449s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/rosidl_interfaces/voice_interfaces
+[1.449s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces
+[1.450s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg
+[1.450s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.450s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action
+[1.450s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.h
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__struct.h
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__functions.c
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__functions.h
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/voice_command.h
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail
+[1.451s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__type_support.h
+[1.452s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__struct.h
+[1.452s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__functions.c
+[1.452s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__functions.h
+[1.452s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/voice_command.h
+[1.452s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/library_path.sh
+[1.454s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/library_path.dsv
+[1.454s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_c.so
+[1.455s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces
+[1.455s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_fastrtps_c.h
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail
+[1.456s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__rosidl_typesupport_fastrtps_c.h
+[1.457s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.458s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces
+[1.458s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg
+[1.458s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.459s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action
+[1.459s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail
+[1.459s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_introspection_c.h
+[1.460s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.c
+[1.460s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv
+[1.461s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail
+[1.461s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__rosidl_typesupport_introspection_c.h
+[1.462s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__type_support.c
+[1.462s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_introspection_c.so
+[1.462s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_c.so
+[1.463s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces
+[1.463s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg
+[1.464s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.464s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action
+[1.465s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail
+[1.465s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__struct.hpp
+[1.466s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.hpp
+[1.466s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__traits.hpp
+[1.466s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__builder.hpp
+[1.468s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/voice_command.hpp
+[1.468s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv
+[1.468s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail
+[1.469s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__struct.hpp
+[1.469s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__type_support.hpp
+[1.469s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__traits.hpp
+[1.469s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__builder.hpp
+[1.470s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/voice_command.hpp
+[1.470s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces
+[1.470s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg
+[1.470s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.471s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action
+[1.471s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail
+[1.471s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_fastrtps_cpp.hpp
+[1.471s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/dds_fastrtps
+[1.471s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__rosidl_typesupport_fastrtps_cpp.hpp
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/dds_fastrtps
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action
+[1.472s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail
+[1.473s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__rosidl_typesupport_introspection_cpp.hpp
+[1.473s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/action/detail/voice_command__type_support.cpp
+[1.473s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv
+[1.473s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail
+[1.474s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__rosidl_typesupport_introspection_cpp.hpp
+[1.474s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/include/voice_interfaces/voice_interfaces/srv/detail/voice_command__type_support.cpp
+[1.474s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.474s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_typesupport_cpp.so
+[1.474s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/pythonpath.sh
+[1.474s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/pythonpath.dsv
+[1.475s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info
+[1.475s] -- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.475s] -- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.475s] -- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.475s] -- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.475s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces
+[1.476s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.476s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.476s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c
+[1.476s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.476s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.476s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.477s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/libvoice_interfaces__rosidl_generator_py.so
+[1.477s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action
+[1.477s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/_voice_command.py
+[1.477s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/__init__.py
+[1.477s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action/_voice_command_s.c
+[1.477s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/srv
+[1.478s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/srv/_voice_command.py
+[1.478s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/srv/__init__.py
+[1.478s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/srv/_voice_command_s.c
+[1.478s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/__init__.py
+[1.552s] Listing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces'...
+[1.552s] Listing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/action'...
+[1.552s] Listing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/srv'...
+[1.567s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.569s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.570s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/local/lib/python3.10/dist-packages/voice_interfaces/voice_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.571s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_py.so
+[1.572s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/srv/VoiceCommand.idl
+[1.572s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/srv/VoiceCommand.srv
+[1.572s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/srv/VoiceCommand_Request.msg
+[1.573s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/srv/VoiceCommand_Response.msg
+[1.573s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/package_run_dependencies/voice_interfaces
+[1.574s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/parent_prefix_path/voice_interfaces
+[1.574s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/ament_prefix_path.sh
+[1.575s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/ament_prefix_path.dsv
+[1.575s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/path.sh
+[1.576s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/environment/path.dsv
+[1.576s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.bash
+[1.576s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.sh
+[1.577s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.zsh
+[1.577s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/local_setup.dsv
+[1.577s] -- Installing: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/package.dsv
+[1.578s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/ament_index/resource_index/packages/voice_interfaces
+[1.578s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_cExport.cmake
+[1.579s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.579s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.581s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.581s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.581s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.581s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cExport.cmake
+[1.581s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.582s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_cppExport.cmake
+[1.582s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.582s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.582s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.583s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.583s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cppExport.cmake
+[1.583s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.583s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_pyExport.cmake
+[1.583s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/export_voice_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.584s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.584s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.584s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.585s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.585s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.585s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.585s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.585s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfacesConfig.cmake
+[1.585s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/cmake/voice_interfacesConfig-version.cmake
+[1.586s] -- Up-to-date: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/share/voice_interfaces/package.xml
+[1.593s] Invoked command in '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces

@@ -6,3 +6,5 @@ voice_interfaces.egg-info/dependency_links.txt
 voice_interfaces.egg-info/top_level.txt
 voice_interfaces/action/__init__.py
 voice_interfaces/action/_voice_command.py
+voice_interfaces/srv/__init__.py
+voice_interfaces/srv/_voice_command.py

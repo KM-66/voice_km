@@ -69,9 +69,9 @@ include voice_interfaces__py/CMakeFiles/voice_interfaces__py.dir/progress.make
 voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c
-voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/action/_voice_command.py
-voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/action/__init__.py
-voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/action/_voice_command_s.c
+voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/srv/_voice_command.py
+voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/srv/__init__.py
+voice_interfaces__py/CMakeFiles/voice_interfaces__py: rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c
 
 rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -86,14 +86,7 @@ rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_f
 rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/voice_interfaces/action/VoiceCommand.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
+rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/voice_interfaces/srv/VoiceCommand.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/voice_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -103,21 +96,21 @@ rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_i
 rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/voice_interfaces/action/_voice_command.py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/action/_voice_command.py
+rosidl_generator_py/voice_interfaces/srv/_voice_command.py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/srv/_voice_command.py
 
-rosidl_generator_py/voice_interfaces/action/__init__.py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/action/__init__.py
+rosidl_generator_py/voice_interfaces/srv/__init__.py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/srv/__init__.py
 
-rosidl_generator_py/voice_interfaces/action/_voice_command_s.c: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/action/_voice_command_s.c
+rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c
 
 voice_interfaces__py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_c.c
 voice_interfaces__py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 voice_interfaces__py: rosidl_generator_py/voice_interfaces/_voice_interfaces_s.ep.rosidl_typesupport_introspection_c.c
-voice_interfaces__py: rosidl_generator_py/voice_interfaces/action/__init__.py
-voice_interfaces__py: rosidl_generator_py/voice_interfaces/action/_voice_command.py
-voice_interfaces__py: rosidl_generator_py/voice_interfaces/action/_voice_command_s.c
+voice_interfaces__py: rosidl_generator_py/voice_interfaces/srv/__init__.py
+voice_interfaces__py: rosidl_generator_py/voice_interfaces/srv/_voice_command.py
+voice_interfaces__py: rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c
 voice_interfaces__py: voice_interfaces__py/CMakeFiles/voice_interfaces__py
 voice_interfaces__py: voice_interfaces__py/CMakeFiles/voice_interfaces__py.dir/build.make
 .PHONY : voice_interfaces__py

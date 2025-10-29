@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp.o"
-  "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp.o.d"
+  "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/srv/voice_command__type_support.cpp.o"
+  "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/srv/voice_command__type_support.cpp.o.d"
   "libvoice_interfaces__rosidl_typesupport_c.pdb"
   "libvoice_interfaces__rosidl_typesupport_c.so"
-  "rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp"
+  "rosidl_typesupport_c/voice_interfaces/srv/voice_command__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

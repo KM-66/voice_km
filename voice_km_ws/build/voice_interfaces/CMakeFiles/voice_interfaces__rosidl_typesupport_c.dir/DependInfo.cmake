@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp" "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp.o" "gcc" "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/action/voice_command__type_support.cpp.o.d"
+  "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_typesupport_c/voice_interfaces/srv/voice_command__type_support.cpp" "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/srv/voice_command__type_support.cpp.o" "gcc" "CMakeFiles/voice_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/voice_interfaces/srv/voice_command__type_support.cpp.o.d"
   )
 
 # Targets to which this target links.

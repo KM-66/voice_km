@@ -201,11 +201,9 @@ CMakeFiles/voice_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gen
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/action/detail/voice_command__type_support.h \
+ /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__type_support.h \
  /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/action/detail/voice_command__struct.h \
+ /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.h
+ /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.h

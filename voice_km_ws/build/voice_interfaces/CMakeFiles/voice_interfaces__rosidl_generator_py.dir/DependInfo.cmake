@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_py/voice_interfaces/action/_voice_command_s.c" "CMakeFiles/voice_interfaces__rosidl_generator_py.dir/rosidl_generator_py/voice_interfaces/action/_voice_command_s.c.o" "gcc" "CMakeFiles/voice_interfaces__rosidl_generator_py.dir/rosidl_generator_py/voice_interfaces/action/_voice_command_s.c.o.d"
+  "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c" "CMakeFiles/voice_interfaces__rosidl_generator_py.dir/rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c.o" "gcc" "CMakeFiles/voice_interfaces__rosidl_generator_py.dir/rosidl_generator_py/voice_interfaces/srv/_voice_command_s.c.o.d"
   )
 
 # Targets to which this target links.

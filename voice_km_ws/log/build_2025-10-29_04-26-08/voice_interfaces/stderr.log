@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'action/VoiceCommand.action'
+  doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces'
+Call Stack (most recent call first):
+  CMakeLists.txt:12 (rosidl_generate_interfaces)
+
+[0m
+gmake: *** [Makefile:747: cmake_check_build_system] エラー 1

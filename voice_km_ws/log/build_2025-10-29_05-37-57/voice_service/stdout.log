@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/voice_service/voice_service.egg-info/PKG-INFO
+writing dependency_links to ../../build/voice_service/voice_service.egg-info/dependency_links.txt
+writing entry points to ../../build/voice_service/voice_service.egg-info/entry_points.txt
+writing requirements to ../../build/voice_service/voice_service.egg-info/requires.txt
+writing top-level names to ../../build/voice_service/voice_service.egg-info/top_level.txt
+reading manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'
+writing manifest file '../../build/voice_service/voice_service.egg-info/SOURCES.txt'
+running build
+running build_py
+copying voice_service/voice_client_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service
+copying voice_service/voice_service_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service
+running install
+running install_lib
+copying /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service/voice_client_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service
+copying /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/build/lib/voice_service/voice_service_node.py -> /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service
+byte-compiling /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service/voice_client_node.py to voice_client_node.cpython-310.pyc
+byte-compiling /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service/voice_service_node.py to voice_service_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/voice_service/voice_service.egg-info to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/python3.10/site-packages/voice_service-0.0.0-py3.10.egg-info
+running install_scripts
+Installing voice_client_node script to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/voice_service
+Installing voice_service_node script to /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_service/lib/voice_service
+writing list of installed files to '/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_service/install.log'

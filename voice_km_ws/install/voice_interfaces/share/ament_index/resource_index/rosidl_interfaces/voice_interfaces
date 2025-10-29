@@ -1,2 +1,4 @@
-action/VoiceCommand.action
-action/VoiceCommand.idl
+srv/VoiceCommand.idl
+srv/VoiceCommand.srv
+srv/VoiceCommand_Request.msg
+srv/VoiceCommand_Response.msg

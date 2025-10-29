@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from voice_interfaces/srv/VoiceCommand.srv
+// generated code does not contain a copyright notice
+
+
+module voice_interfaces {
+  module srv {
+    struct VoiceCommand_Request {
+      string command;
+    };
+    struct VoiceCommand_Response {
+      string answer;
+    };
+  };
+};

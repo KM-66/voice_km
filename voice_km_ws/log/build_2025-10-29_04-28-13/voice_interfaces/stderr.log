@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:342 (file):
+  file INSTALL cannot set modification time on
+  "/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/install/voice_interfaces/lib/libvoice_interfaces__rosidl_generator_py.so":
+  No such file or directory.
+
+[0m

@@ -66,11 +66,9 @@ include CMakeFiles/voice_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/voice_interfaces.dir/progress.make
 
-CMakeFiles/voice_interfaces: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces/action/VoiceCommand.action
-CMakeFiles/voice_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-CMakeFiles/voice_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-CMakeFiles/voice_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-CMakeFiles/voice_interfaces: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+CMakeFiles/voice_interfaces: /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces/srv/VoiceCommand.srv
+CMakeFiles/voice_interfaces: rosidl_cmake/srv/VoiceCommand_Request.msg
+CMakeFiles/voice_interfaces: rosidl_cmake/srv/VoiceCommand_Response.msg
 
 voice_interfaces: CMakeFiles/voice_interfaces
 voice_interfaces: CMakeFiles/voice_interfaces.dir/build.make

@@ -69,68 +69,58 @@ include CMakeFiles/voice_interfaces__rosidl_generator_c.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/voice_interfaces__rosidl_generator_c.dir/flags.make
 
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/lib/rosidl_generator_c/rosidl_generator_c
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/action__type_support.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.c.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__struct.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__type_support.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.c.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__struct.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
-rosidl_generator_c/voice_interfaces/action/voice_command.h: rosidl_adapter/voice_interfaces/action/VoiceCommand.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-rosidl_generator_c/voice_interfaces/action/voice_command.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/lib/rosidl_generator_c/rosidl_generator_c
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/action__type_support.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.c.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__functions.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__struct.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/idl__type_support.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.c.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__functions.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__struct.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
+rosidl_generator_c/voice_interfaces/srv/voice_command.h: rosidl_adapter/voice_interfaces/srv/VoiceCommand.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c__arguments.json
 
-rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.h: rosidl_generator_c/voice_interfaces/action/voice_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.h
+rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.h: rosidl_generator_c/voice_interfaces/srv/voice_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.h
 
-rosidl_generator_c/voice_interfaces/action/detail/voice_command__struct.h: rosidl_generator_c/voice_interfaces/action/voice_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/action/detail/voice_command__struct.h
+rosidl_generator_c/voice_interfaces/srv/detail/voice_command__struct.h: rosidl_generator_c/voice_interfaces/srv/voice_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/srv/detail/voice_command__struct.h
 
-rosidl_generator_c/voice_interfaces/action/detail/voice_command__type_support.h: rosidl_generator_c/voice_interfaces/action/voice_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/action/detail/voice_command__type_support.h
+rosidl_generator_c/voice_interfaces/srv/detail/voice_command__type_support.h: rosidl_generator_c/voice_interfaces/srv/voice_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/srv/detail/voice_command__type_support.h
 
-rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c: rosidl_generator_c/voice_interfaces/action/voice_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c
+rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c: rosidl_generator_c/voice_interfaces/srv/voice_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c
 
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/flags.make
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o: rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o -MF CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o.d -o CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o -c /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o: rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o -MF CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o.d -o CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o -c /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c
 
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c > CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.i
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c > CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.i
 
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c -o CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.s
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c -o CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.s
 
 # Object files for target voice_interfaces__rosidl_generator_c
 voice_interfaces__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o"
+"CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o"
 
 # External object files for target voice_interfaces__rosidl_generator_c
 voice_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
-libvoice_interfaces__rosidl_generator_c.so: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c.o
+libvoice_interfaces__rosidl_generator_c.so: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c.o
 libvoice_interfaces__rosidl_generator_c.so: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/build.make
-libvoice_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
-libvoice_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-libvoice_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libvoice_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libvoice_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libvoice_interfaces__rosidl_generator_c.so: CMakeFiles/voice_interfaces__rosidl_generator_c.dir/link.txt
@@ -145,11 +135,11 @@ CMakeFiles/voice_interfaces__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/voice_interfaces__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/voice_interfaces__rosidl_generator_c.dir/clean
 
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.c
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/action/detail/voice_command__functions.h
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/action/detail/voice_command__struct.h
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/action/detail/voice_command__type_support.h
-CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/action/voice_command.h
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.c
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/srv/detail/voice_command__functions.h
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/srv/detail/voice_command__struct.h
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/srv/detail/voice_command__type_support.h
+CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/voice_interfaces/srv/voice_command.h
 	cd /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/src/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces /home/mimi/voice_km/2025_SUMMER_LT/voice_km/voice_km_ws/build/voice_interfaces/CMakeFiles/voice_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/voice_interfaces__rosidl_generator_c.dir/depend
 

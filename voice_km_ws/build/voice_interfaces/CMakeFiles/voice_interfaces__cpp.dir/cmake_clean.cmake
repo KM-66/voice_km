@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/voice_interfaces__cpp"
-  "rosidl_generator_cpp/voice_interfaces/action/detail/voice_command__builder.hpp"
-  "rosidl_generator_cpp/voice_interfaces/action/detail/voice_command__struct.hpp"
-  "rosidl_generator_cpp/voice_interfaces/action/detail/voice_command__traits.hpp"
-  "rosidl_generator_cpp/voice_interfaces/action/detail/voice_command__type_support.hpp"
-  "rosidl_generator_cpp/voice_interfaces/action/voice_command.hpp"
+  "rosidl_generator_cpp/voice_interfaces/srv/detail/voice_command__builder.hpp"
+  "rosidl_generator_cpp/voice_interfaces/srv/detail/voice_command__struct.hpp"
+  "rosidl_generator_cpp/voice_interfaces/srv/detail/voice_command__traits.hpp"
+  "rosidl_generator_cpp/voice_interfaces/srv/detail/voice_command__type_support.hpp"
+  "rosidl_generator_cpp/voice_interfaces/srv/voice_command.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

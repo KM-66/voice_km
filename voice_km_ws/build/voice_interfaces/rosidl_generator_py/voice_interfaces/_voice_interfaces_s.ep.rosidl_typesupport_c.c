@@ -24,39 +24,39 @@ static struct PyModuleDef voice_interfaces__module = {
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "voice_interfaces/action/detail/voice_command__type_support.h"
-#include "voice_interfaces/action/detail/voice_command__struct.h"
-#include "voice_interfaces/action/detail/voice_command__functions.h"
+#include "voice_interfaces/srv/detail/voice_command__type_support.h"
+#include "voice_interfaces/srv/detail/voice_command__struct.h"
+#include "voice_interfaces/srv/detail/voice_command__functions.h"
 
-static void * voice_interfaces__action__voice_command__goal__create_ros_message(void)
+static void * voice_interfaces__srv__voice_command__request__create_ros_message(void)
 {
-  return voice_interfaces__action__VoiceCommand_Goal__create();
+  return voice_interfaces__srv__VoiceCommand_Request__create();
 }
 
-static void voice_interfaces__action__voice_command__goal__destroy_ros_message(void * raw_ros_message)
+static void voice_interfaces__srv__voice_command__request__destroy_ros_message(void * raw_ros_message)
 {
-  voice_interfaces__action__VoiceCommand_Goal * ros_message = (voice_interfaces__action__VoiceCommand_Goal *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_Goal__destroy(ros_message);
+  voice_interfaces__srv__VoiceCommand_Request * ros_message = (voice_interfaces__srv__VoiceCommand_Request *)raw_ros_message;
+  voice_interfaces__srv__VoiceCommand_Request__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__goal__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool voice_interfaces__srv__voice_command__request__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__goal__convert_to_py(void * raw_ros_message);
+PyObject * voice_interfaces__srv__voice_command__request__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_Goal);
+ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, srv, VoiceCommand_Request);
 
 int8_t
-_register_msg_type__action__voice_command__goal(PyObject * pymodule)
+_register_msg_type__srv__voice_command__request(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__goal__create_ros_message,
+    (void *)&voice_interfaces__srv__voice_command__request__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -64,7 +64,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__voice_command__goal",
+    "create_ros_message_msg__srv__voice_command__request",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -75,7 +75,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__goal__destroy_ros_message,
+    (void *)&voice_interfaces__srv__voice_command__request__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -83,7 +83,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__voice_command__goal",
+    "destroy_ros_message_msg__srv__voice_command__request",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -94,7 +94,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__goal__convert_from_py,
+    (void *)&voice_interfaces__srv__voice_command__request__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -102,7 +102,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__voice_command__goal",
+    "convert_from_py_msg__srv__voice_command__request",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -113,7 +113,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__goal__convert_to_py,
+    (void *)&voice_interfaces__srv__voice_command__request__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -121,7 +121,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__voice_command__goal",
+    "convert_to_py_msg__srv__voice_command__request",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -132,7 +132,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_Goal),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, srv, VoiceCommand_Request),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -140,7 +140,7 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__voice_command__goal",
+    "type_support_msg__srv__voice_command__request",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -164,41 +164,41 @@ _register_msg_type__action__voice_command__goal(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
+// #include "voice_interfaces/srv/detail/voice_command__type_support.h"
 // already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
+// #include "voice_interfaces/srv/detail/voice_command__struct.h"
 // already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
+// #include "voice_interfaces/srv/detail/voice_command__functions.h"
 
-static void * voice_interfaces__action__voice_command__result__create_ros_message(void)
+static void * voice_interfaces__srv__voice_command__response__create_ros_message(void)
 {
-  return voice_interfaces__action__VoiceCommand_Result__create();
+  return voice_interfaces__srv__VoiceCommand_Response__create();
 }
 
-static void voice_interfaces__action__voice_command__result__destroy_ros_message(void * raw_ros_message)
+static void voice_interfaces__srv__voice_command__response__destroy_ros_message(void * raw_ros_message)
 {
-  voice_interfaces__action__VoiceCommand_Result * ros_message = (voice_interfaces__action__VoiceCommand_Result *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_Result__destroy(ros_message);
+  voice_interfaces__srv__VoiceCommand_Response * ros_message = (voice_interfaces__srv__VoiceCommand_Response *)raw_ros_message;
+  voice_interfaces__srv__VoiceCommand_Response__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__result__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool voice_interfaces__srv__voice_command__response__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__result__convert_to_py(void * raw_ros_message);
+PyObject * voice_interfaces__srv__voice_command__response__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_Result);
+ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, srv, VoiceCommand_Response);
 
 int8_t
-_register_msg_type__action__voice_command__result(PyObject * pymodule)
+_register_msg_type__srv__voice_command__response(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__result__create_ros_message,
+    (void *)&voice_interfaces__srv__voice_command__response__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -206,7 +206,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__voice_command__result",
+    "create_ros_message_msg__srv__voice_command__response",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -217,7 +217,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__result__destroy_ros_message,
+    (void *)&voice_interfaces__srv__voice_command__response__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -225,7 +225,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__voice_command__result",
+    "destroy_ros_message_msg__srv__voice_command__response",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -236,7 +236,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__result__convert_from_py,
+    (void *)&voice_interfaces__srv__voice_command__response__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -244,7 +244,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__voice_command__result",
+    "convert_from_py_msg__srv__voice_command__response",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -255,7 +255,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__result__convert_to_py,
+    (void *)&voice_interfaces__srv__voice_command__response__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -263,7 +263,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__voice_command__result",
+    "convert_to_py_msg__srv__voice_command__response",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -274,7 +274,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_Result),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, srv, VoiceCommand_Response),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -282,433 +282,7 @@ _register_msg_type__action__voice_command__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__voice_command__result",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
-
-static void * voice_interfaces__action__voice_command__feedback__create_ros_message(void)
-{
-  return voice_interfaces__action__VoiceCommand_Feedback__create();
-}
-
-static void voice_interfaces__action__voice_command__feedback__destroy_ros_message(void * raw_ros_message)
-{
-  voice_interfaces__action__VoiceCommand_Feedback * ros_message = (voice_interfaces__action__VoiceCommand_Feedback *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_Feedback__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__feedback__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__feedback__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_Feedback);
-
-int8_t
-_register_msg_type__action__voice_command__feedback(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__action__voice_command__feedback",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__action__voice_command__feedback",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__action__voice_command__feedback",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__action__voice_command__feedback",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_Feedback),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__action__voice_command__feedback",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
-
-static void * voice_interfaces__action__voice_command__send_goal__request__create_ros_message(void)
-{
-  return voice_interfaces__action__VoiceCommand_SendGoal_Request__create();
-}
-
-static void voice_interfaces__action__voice_command__send_goal__request__destroy_ros_message(void * raw_ros_message)
-{
-  voice_interfaces__action__VoiceCommand_SendGoal_Request * ros_message = (voice_interfaces__action__VoiceCommand_SendGoal_Request *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_SendGoal_Request__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__send_goal__request__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__send_goal__request__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_SendGoal_Request);
-
-int8_t
-_register_msg_type__action__voice_command__send_goal__request(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__request__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__action__voice_command__send_goal__request",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__request__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__action__voice_command__send_goal__request",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__request__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__action__voice_command__send_goal__request",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__request__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__action__voice_command__send_goal__request",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_SendGoal_Request),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__action__voice_command__send_goal__request",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
-
-static void * voice_interfaces__action__voice_command__send_goal__response__create_ros_message(void)
-{
-  return voice_interfaces__action__VoiceCommand_SendGoal_Response__create();
-}
-
-static void voice_interfaces__action__voice_command__send_goal__response__destroy_ros_message(void * raw_ros_message)
-{
-  voice_interfaces__action__VoiceCommand_SendGoal_Response * ros_message = (voice_interfaces__action__VoiceCommand_SendGoal_Response *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_SendGoal_Response__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__send_goal__response__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__send_goal__response__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_SendGoal_Response);
-
-int8_t
-_register_msg_type__action__voice_command__send_goal__response(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__response__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__action__voice_command__send_goal__response",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__response__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__action__voice_command__send_goal__response",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__response__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__action__voice_command__send_goal__response",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__send_goal__response__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__action__voice_command__send_goal__response",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_SendGoal_Response),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__action__voice_command__send_goal__response",
+    "type_support_msg__srv__voice_command__response",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -721,15 +295,15 @@ _register_msg_type__action__voice_command__send_goal__response(PyObject * pymodu
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, action, VoiceCommand_SendGoal)();
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, srv, VoiceCommand)();
 
 int8_t
-_register_srv_type__action__voice_command__send_goal(PyObject * pymodule)
+_register_srv_type__srv__voice_command(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, action, VoiceCommand_SendGoal)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, srv, VoiceCommand)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -737,488 +311,7 @@ _register_srv_type__action__voice_command__send_goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_srv__action__voice_command__send_goal",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
-
-static void * voice_interfaces__action__voice_command__get_result__request__create_ros_message(void)
-{
-  return voice_interfaces__action__VoiceCommand_GetResult_Request__create();
-}
-
-static void voice_interfaces__action__voice_command__get_result__request__destroy_ros_message(void * raw_ros_message)
-{
-  voice_interfaces__action__VoiceCommand_GetResult_Request * ros_message = (voice_interfaces__action__VoiceCommand_GetResult_Request *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_GetResult_Request__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__get_result__request__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__get_result__request__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_GetResult_Request);
-
-int8_t
-_register_msg_type__action__voice_command__get_result__request(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__request__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__action__voice_command__get_result__request",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__request__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__action__voice_command__get_result__request",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__request__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__action__voice_command__get_result__request",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__request__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__action__voice_command__get_result__request",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_GetResult_Request),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__action__voice_command__get_result__request",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
-
-static void * voice_interfaces__action__voice_command__get_result__response__create_ros_message(void)
-{
-  return voice_interfaces__action__VoiceCommand_GetResult_Response__create();
-}
-
-static void voice_interfaces__action__voice_command__get_result__response__destroy_ros_message(void * raw_ros_message)
-{
-  voice_interfaces__action__VoiceCommand_GetResult_Response * ros_message = (voice_interfaces__action__VoiceCommand_GetResult_Response *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_GetResult_Response__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__get_result__response__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__get_result__response__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_GetResult_Response);
-
-int8_t
-_register_msg_type__action__voice_command__get_result__response(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__response__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__action__voice_command__get_result__response",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__response__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__action__voice_command__get_result__response",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__response__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__action__voice_command__get_result__response",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__get_result__response__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__action__voice_command__get_result__response",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_GetResult_Response),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__action__voice_command__get_result__response",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, action, VoiceCommand_GetResult)();
-
-int8_t
-_register_srv_type__action__voice_command__get_result(PyObject * pymodule)
-{
-  int8_t err;
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, action, VoiceCommand_GetResult)(),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_srv__action__voice_command__get_result",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-// already included above
-// #include <stdbool.h>
-// already included above
-// #include <stdint.h>
-// already included above
-// #include "rosidl_runtime_c/visibility_control.h"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/service_type_support_struct.h"
-// already included above
-// #include "rosidl_runtime_c/action_type_support_struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__type_support.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__struct.h"
-// already included above
-// #include "voice_interfaces/action/detail/voice_command__functions.h"
-
-static void * voice_interfaces__action__voice_command__feedback_message__create_ros_message(void)
-{
-  return voice_interfaces__action__VoiceCommand_FeedbackMessage__create();
-}
-
-static void voice_interfaces__action__voice_command__feedback_message__destroy_ros_message(void * raw_ros_message)
-{
-  voice_interfaces__action__VoiceCommand_FeedbackMessage * ros_message = (voice_interfaces__action__VoiceCommand_FeedbackMessage *)raw_ros_message;
-  voice_interfaces__action__VoiceCommand_FeedbackMessage__destroy(ros_message);
-}
-
-ROSIDL_GENERATOR_C_IMPORT
-bool voice_interfaces__action__voice_command__feedback_message__convert_from_py(PyObject * _pymsg, void * ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * voice_interfaces__action__voice_command__feedback_message__convert_to_py(void * raw_ros_message);
-
-
-ROSIDL_GENERATOR_C_IMPORT
-const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_FeedbackMessage);
-
-int8_t
-_register_msg_type__action__voice_command__feedback_message(PyObject * pymodule)
-{
-  int8_t err;
-
-  PyObject * pyobject_create_ros_message = NULL;
-  pyobject_create_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback_message__create_ros_message,
-    NULL, NULL);
-  if (!pyobject_create_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "create_ros_message_msg__action__voice_command__feedback_message",
-    pyobject_create_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_create_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_destroy_ros_message = NULL;
-  pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback_message__destroy_ros_message,
-    NULL, NULL);
-  if (!pyobject_destroy_ros_message) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "destroy_ros_message_msg__action__voice_command__feedback_message",
-    pyobject_destroy_ros_message);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_destroy_ros_message);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_from_py = NULL;
-  pyobject_convert_from_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback_message__convert_from_py,
-    NULL, NULL);
-  if (!pyobject_convert_from_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_from_py_msg__action__voice_command__feedback_message",
-    pyobject_convert_from_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_from_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_convert_to_py = NULL;
-  pyobject_convert_to_py = PyCapsule_New(
-    (void *)&voice_interfaces__action__voice_command__feedback_message__convert_to_py,
-    NULL, NULL);
-  if (!pyobject_convert_to_py) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "convert_to_py_msg__action__voice_command__feedback_message",
-    pyobject_convert_to_py);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_convert_to_py);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(voice_interfaces, action, VoiceCommand_FeedbackMessage),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_msg__action__voice_command__feedback_message",
-    pyobject_type_support);
-  if (err) {
-    // the created capsule needs to be decremented
-    Py_XDECREF(pyobject_type_support);
-    // previously added objects will be removed when the module is destroyed
-    return err;
-  }
-  return 0;
-}
-
-
-int8_t
-_register_action_type__action__voice_command(PyObject * pymodule)
-{
-  int8_t err;
-  PyObject * pyobject_type_support = NULL;
-  pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(rosidl_typesupport_c, voice_interfaces, action, VoiceCommand)(),
-    NULL, NULL);
-  if (!pyobject_type_support) {
-    // previously added objects will be removed when the module is destroyed
-    return -1;
-  }
-  err = PyModule_AddObject(
-    pymodule,
-    "type_support_action__action__voice_command",
+    "type_support_srv__srv__voice_command",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -1239,67 +332,19 @@ PyInit_voice_interfaces_s__rosidl_typesupport_c(void)
   }
   int8_t err;
 
-  err = _register_msg_type__action__voice_command__goal(pymodule);
+  err = _register_msg_type__srv__voice_command__request(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__voice_command__result(pymodule);
+  err = _register_msg_type__srv__voice_command__response(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__voice_command__feedback(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__action__voice_command__send_goal__request(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__action__voice_command__send_goal__response(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_srv_type__action__voice_command__send_goal(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__action__voice_command__get_result__request(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__action__voice_command__get_result__response(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_srv_type__action__voice_command__get_result(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_msg_type__action__voice_command__feedback_message(pymodule);
-  if (err) {
-    Py_XDECREF(pymodule);
-    return NULL;
-  }
-
-  err = _register_action_type__action__voice_command(pymodule);
+  err = _register_srv_type__srv__voice_command(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
